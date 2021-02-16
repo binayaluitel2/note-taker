@@ -1,0 +1,28 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "Note Taking Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no tests\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binayaluitel2/note-taker.git"
+  },
+  "keywords": [
+    "Note",
+    "Taker",
+    "Express",
+    "Jest"
+  ],
+  "author": "Binaya Luitel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binayaluitel2/note-taker/issues"
+  },
+  "homepage": "https://github.com/binayaluitel2/note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
