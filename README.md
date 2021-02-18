@@ -24,7 +24,7 @@ Navigate to the note-taker folder using the command prompt.
 
 Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open `http://localhost:3000` in your preferred browswer. 
 
-[live on Heroku](https://warm-cliffs-50366.herokuapp.com/) for you to use as well.  
+[App Deployed On Heroku](https://warm-cliffs-50366.herokuapp.com/)  
   ## Usage 
     
   ![Gif demo of note taker](note_taker.gif)
