@@ -6,6 +6,7 @@ var $noteList = $(".list-container .list-group");
 
 var activeNote = {};
 
+// gets notes
 var getNotes = function () {
   return $.ajax({
     url: "/api/notes",
@@ -13,6 +14,7 @@ var getNotes = function () {
   });
 };
 
+// saves notes
 var saveNote = function (note) {
   return $.ajax({
     url: "/api/notes",
@@ -21,6 +23,7 @@ var saveNote = function (note) {
   });
 };
 
+// deletes notes
 var deleteNote = function (id) {
   return $.ajax({
     url: "api/notes/" + id,
