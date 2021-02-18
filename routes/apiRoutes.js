@@ -3,12 +3,14 @@ const fs = require("fs");
 const notesData = require("../db/db.json");
 
 module.exports = function (app) {
+  // GET Method to return all notes
   app.get("/api/notes", function (req, res) {
     res.json(notesData);
   });
 
+  // POST Method to add notes
   app.post("/api/notes", function (req, res) {
-    let rawdata = fs.readFileSync("db/db.json");
+    let rawdata = fs.readFileSync("./db/db.json");
 
     let notesArray = JSON.parse(rawdata);
 
@@ -24,11 +26,11 @@ module.exports = function (app) {
       }
     });
 
-    res.json(notesArray);
+    res.json(req.body);
   });
 
   app.delete("/api/notes/:id", function (req, res) {
-    let rawdata = fs.readFileSync("db/db.json");
+    let rawdata = fs.readFileSync("./db/db.json");
 
     let notesArray = JSON.parse(rawdata);
 
@@ -37,6 +39,7 @@ module.exports = function (app) {
     for (i = 0; i < notesArray.length; i++) {
       if (notesArray[i].id == id) {
         res.send(notesArray[i]);
+
         notesArray.splice(i, 1);
         break;
       }
